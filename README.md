@@ -8,6 +8,10 @@ Usual install
 
 `yarn dev` or `yarn run dev`
 
+## Test
+
+`yarn test` or `npm run test`
+
 ## Production
 
 Repo used for assess skills and approach to front-end development.
