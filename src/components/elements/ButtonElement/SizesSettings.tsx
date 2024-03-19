@@ -11,10 +11,6 @@ const SizeLabel = ({ text }: { text: string }) => (
 
 const sizeOptions: RadioOption[] = [
   {
-    label: <SizeLabel text="XL" />,
-    value: ButtonSize.XL,
-  },
-  {
     label: <SizeLabel text="L" />,
     value: ButtonSize.L,
   },

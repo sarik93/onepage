@@ -9,7 +9,6 @@ export enum VerticalAlignment {
   BOTTOM = "bottom",
 }
 export enum ButtonSize {
-  XL = "XL",
   L = "L",
   M = "M",
   S = "S",

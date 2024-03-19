@@ -59,16 +59,16 @@ describe("Button Element", () => {
 
     const sizeField = screen.getByTestId("field-size");
     const sizeOptions = within(sizeField).getAllByTestId("radio-label");
-    expect(sizeOptions[2]).toHaveClass("checked");
+    expect(sizeOptions[1]).toHaveClass("checked");
     expect(screen.getByTestId("baseButtonLink")).toHaveStyle({
       "--button-font-size": "15px",
     });
     fireEvent.click(sizeOptions[0]);
     await waitFor(() => {});
-    expect(sizeOptions[2]).not.toHaveClass("checked");
+    expect(sizeOptions[1]).not.toHaveClass("checked");
     expect(sizeOptions[0]).toHaveClass("checked");
     expect(screen.getByTestId("baseButtonLink")).toHaveStyle({
-      "--button-font-size": "18px",
+      "--button-font-size": "17px",
     });
 
     const horizontalAlignmentField = screen.getByTestId(
