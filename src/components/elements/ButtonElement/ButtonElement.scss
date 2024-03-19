@@ -1,0 +1,29 @@
+.alignments {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  &-block {
+    width: 100%;
+
+    .form-field {
+      border: none;
+    }
+
+    &:nth-child(1) {
+      .form-field {
+        padding-right: 0;
+      }
+    }
+
+    &:nth-child(2) {
+      .form-field {
+        padding-left: 0;
+      }
+    }
+  }
+}
+
+.size-label {
+  width: 100%;
+}

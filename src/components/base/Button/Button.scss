@@ -1,0 +1,58 @@
+.base-button {
+  --button-padding-vertical: 6.75px;
+  --button-padding-horizontal: 27px;
+  --button-font-size: 15px;
+  padding: var(--button-padding-vertical) var(--button-padding-horizontal);
+  font-size: var(--button-font-size);
+  box-sizing: border-box;
+  border-radius: 6px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #1e5dff;
+  color: #ffffff;
+  text-decoration: none;
+  user-select: none;
+
+  &:hover {
+    color: #ffffff;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.base-button-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  &[data-horizontal="left"] {
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  &[data-horizontal="center"] {
+    text-align: center;
+    align-items: center;
+  }
+
+  &[data-horizontal="right"] {
+    text-align: right;
+    align-items: flex-end;
+  }
+
+  &[data-vertical="top"] {
+    align-self: flex-start;
+  }
+
+  &[data-vertical="center"] {
+    align-self: center;
+  }
+
+  &[data-vertical="bottom"] {
+    align-self: flex-end;
+  }
+}
